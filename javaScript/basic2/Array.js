@@ -23,10 +23,10 @@ const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr.includes(9));  //false
 // console.log(myArr.indexOf(3)); // 3
 
-// const newArr = myArr.join()
+// const newArr = myArr.join()  // it return string individually
 
 // console.log(myArr); // [ 0, 1, 2, 3, 4, 5 ]
-// console.log( newArr); //0,1, 2,3,4,5
+// console.log( newArr); //0,1, 2,3,4,5. results of join
 
 
 // slice, splice
@@ -61,7 +61,7 @@ const dc_heros = ["superman", "flash", "batman"]
 // console.log(marvel_heros); //[ 'thor', 'Ironman', 'spiderman', [ 'superman', 'flash', 'batman' ] ]
 // console.log(marvel_heros[3][1]); //flash'
 
-// const allHeros = marvel_heros.concat(dc_heros)
+// const allHeros = marvel_heros.concat(dc_heros) // use of concat
 // console.log(allHeros); // [ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ]
 
 const all_new_heros = [...marvel_heros, ...dc_heros]
@@ -71,7 +71,8 @@ const all_new_heros = [...marvel_heros, ...dc_heros]
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 
 const real_another_array = another_array.flat(Infinity)
-// console.log(real_another_array); // [
+// console.log(real_another_array); // it return single arry
+// [
 //   1, 2, 3, 4, 5,
 //   6, 7, 6, 7, 4,
 //   5
